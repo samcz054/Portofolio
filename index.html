@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+
+    <nav class="navbar navbar-light fixed-top bg-light shadow-sm">
+        <div class="container-lg">
+
+            <a class="navbar-brand text-danger fw-bold fs-4" href="#">samCZ</a>
+
+            <div class="dropdown">
+                <button class="btn btn-danger px-3" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#home">Home</a></li>
+                  <li><a class="dropdown-item" href="#about">About</a></li>
+                  <li><a class="dropdown-item" href="#services">Services</a></li>
+                  <li><a class="dropdown-item" href="#portfolio">Portfolio</a></li>
+                </ul>
+              </div>
+
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- home -->
+    <section class="home py-2" id="home">
+      <div class="container-lg">
+        <div class="row min-vh-100 align-items-center align-content-center">
+
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="home-img text-center">
+              <img src="./img/profile-picture.png" class="rounded-circle mw-100" alt="profile img" style="width: 82%;">
+            </div>
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0 order-md-first">
+            <div class="home-text">
+              <p class="text-muted mb-1">Hello i'm</p>
+              <h1 class="text-danger text-uppercase fs-1 fw-bold">Web Designer</h1>
+              <h2 class="fs-4">Arief Ramadhan</h2>
+              <p class="mt-4 text-muted">Hello my name is Arief Ramadhan, I am from Indonesian Country. Now I am 20 years old, I am studying at the Politeknik Negeri Banyuwangi
+                If you need Graphic Designer and Web Developer you can contact me. I will do with my best</p>
+                <a class="btn btn-danger px-3 mt-3" href="#about">My Work</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- home end-->
+
+    <canvas id="canvasBola"></canvas>
+    
+    <!-- about section -->
+    <section class="about py-3" id="about">
+      <div class="container-lg py-4">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">About Me</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-4 mb-3">Hello my name is Arief Ramadhan</h3>
+              <p class="text-muted">I am from Indonesian Country. Now I am 20 years old, I am studying at the Politeknik Negeri Banyuwangi
+                If you need Graphic Designer and Web Developer you can contact me. I will do with my best</p>
+            </div>
+
+            <div class="row text-center text-uppercase my-3">
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">20</h4>
+                  <p class="text-muted">Projects Completed</p>
+                </div>
+              </div>
+    
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">10</h4>
+                  <p class="text-muted">Happy Clients</p>
+                </div>
+              </div>
+    
+              <div class="col-sm-4">
+                <div class="fact-item">
+                  <h4 class="fs-1 fw-bold">15</h4>
+                  <p class="text-muted">Positive Reviews</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 d-flex align-items-center">
+                <div class="social-links">
+                  <a class="text-dark me-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a class="text-dark me-2" href="#"><i class="fab fa-twitter"></i></a>
+                  <a class="text-dark me-2" href="#"><i class="fab fa-instagram"></i></a>
+                  <a class="text-dark me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Html</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Css</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Figma</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="skill-item mb-4">
+              <h3 class="fs-6">Photoshop</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- end about section -->
+
+    <!-- <canvas id="nokey" height="100" style="background-color: rgb(0, 0, 0);"></canvas> -->
+
+
+    <!-- service section start -->
+
+    <section class="services py-5" id="services">
+      <div class="container-lg">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">What I do</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row text-center">
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3 class="fs-5 py-2">Web Development</h3>
+              <p class="text-muted">The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h3 class="fs-5 py-2">Figma</h3>
+              <p class="text-muted">Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4">
+            <div class="service-item shadow-sm p-4 rounded bg-white">
+              <div class="icon my-3 text-danger fs-2">
+                <i class="fas fa-image"></i>
+              </div>
+              <h3 class="fs-5 py-2 ">Photoshop</h3>
+              <p class="text-muted">Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, the software has become the industry standard not only in raster graphics editing, but in digital art as a whole.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- service section end -->
+
+    <!-- Project start -->
+    <Section id="project">
+      <div class="section-title text-center">
+        <h2 class="fw-bold mb-5">My Recently Project</h2>
+      </div>
+      <div class="slide-margin"> 
+        <div class="container slider-foto">
+          <article class="slide">
+            <canvas id="slide1" width="320" height="240"></canvas>
+            <canvas id="slide2" width="320" height="240"></canvas>
+          </article>
+        </div>
+      </div>
+    </Section>
+    <!-- Project End -->
+    
+    <!-- portofolio section start -->
+    <section class="portfolio mb-5" id="portfolio">
+      <div class="about text-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h1 class="text-danger">
+                        Portfolio 
+                    </h1>
+                </div>
+            </div>
+            <div class="row justify-content-around fs-5 text-center">
+                <div class="col-sm-4" style="border-left : 1px solid rgb(68, 68, 68);">
+                    <h4 class="text-danger mb-4">Personal information</h4>
+                    <table class="text-muted" style="text-align: left;">
+                        <tr>
+                            <th >Nama</th>
+                            <td>:</td>
+                            <td>Arief Ramadhan</td>
+                        </tr>
+                        <tr>
+                            <th>TTL</th>
+                            <td>:</td>
+                            <td>Banyuwangi, 10 Desember 2000</td>
+                        </tr>
+                        <tr>
+                            <th>Agama</th>
+                            <td>:</td>
+                            <td>Islam</td>
+                        </tr>
+                        <tr>
+                            <th>Hobi</th>
+                            <td>:</td>
+                            <td>Gaming, Programming, Editing</td>
+                        </tr>
+                        <tr>
+                            <th>Alamat</th>
+                            <td>:</td>
+                            <td>Ketapang , Kalipuro , Banyuwangi</td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>:</td>
+                            <td>aramadhan39@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <th>Hp</th>
+                            <td>:</td>
+                            <td>082141998379</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-4" style="border-left : 1px solid rgb(68, 68, 68);">
+                    <h4 class="text-danger mb-4">Education</h4>
+                    <ul class="text-muted" style="text-align: left;">
+                        <li>
+                            2007-2012
+                        </li>
+                        SDN 2 Ketapang
+                        <li>
+                            2012-2016
+                        </li>
+                        SMPN 3 Banyuwangi
+                        <li>
+                            2016-2019
+                        </li>
+                        SMKN 1 GLAGAH
+                        <li>
+                            2019-Now
+                        </li>
+                        Politeknik Negeri Banyuwangi
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- portofolio section end -->
+
+    <!-- footer section start -->
+    <footer class="footer border-top py-4">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="m-0 text-center">&copy; 2021 Rama samCZ</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <script src="./animation/slide.js"></script>
+    <script src="./animation/balls.js"></script>
+    <script src="./animation/string.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>

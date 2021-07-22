@@ -1,0 +1,16 @@
+.slide canvas {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    box-shadow:2px 2px 2px 20px hsla(0,5%,5%,.2);
+  }
+
+  .slider-foto{
+      position: relative;
+  }
+
+  .slide-margin{
+      padding-top: 170px;
+      padding-bottom: 280px;
+  }
